@@ -1,4 +1,4 @@
-# Oriented.JS ![alt tag](/orientedjs_title.png)
+# ![alt tag](/orientedjs_title.png)
 
 Oriented JS or Ojs is meant to make javascript a little more structured like traditional Java.
 Ojs gives developers the ability to declare interfaces and abstract classes as well as implement 
