@@ -1,8 +1,5 @@
 # Oriented.JS 
 
-[![Build Status](https://travis-ci.org/h5bp/html5-boilerplate.svg)](https://travis-ci.org/h5bp/html5-boilerplate)
-[![devDependency Status](https://david-dm.org/h5bp/html5-boilerplate/dev-status.svg)](https://david-dm.org/h5bp/html5-boilerplate#info=devDependencies)
-
 Oriented JS or Ojs is meant to make javascript a little more structured like traditional Java.
 Ojs gives developers the ability to declare interfaces and abstract classes as well as implement 
  and extend them respectively. Hopefully this will help make more readable and allow developer to 

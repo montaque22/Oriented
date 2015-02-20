@@ -39,7 +39,7 @@ var Person = Abstract.create('Person',function(name){
          however, with the method below, it will apply an error when the empty function is called.
      */
 
-    Person.defineAbstractMethod('play');
+    Abstract.defineAbstractMethod('Person', ['play']);
 
     // Just an ordinary property
     this.name = name;

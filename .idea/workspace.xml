@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cad3822-2b43-4ebd-b166-9a7146185618" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main.js" afterPath="$PROJECT_DIR$/src/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/oriented.js" afterPath="$PROJECT_DIR$/src/js/oriented.js" />
     </list>
     <ignored path="Oriented.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +33,10 @@
         <entry file="file://$PROJECT_DIR$/src/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
-              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="8" selection-end-column="42" />
-              <folding />
+              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,37 +44,39 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="645">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+            <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="645">
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4745223" vertical-offset="347" max-vertical-offset="990">
-              <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+            <state vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="945">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="oriented.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="oriented.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/oriented.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="277" max-vertical-offset="930">
-              <caret line="148" column="39" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.114854515" vertical-offset="0" max-vertical-offset="653">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               <folding>
-                <element signature="e#72#3690#0" expanded="false" />
-                <element signature="e#439#2018#0" expanded="false" />
-                <element signature="e#2055#2324#0" expanded="false" />
-                <element signature="e#3751#4666#0" expanded="false" />
-                <element signature="e#6541#11499#0" expanded="false" />
-                <element signature="e#6825#6981#0" expanded="false" />
-                <element signature="e#7185#7641#0" expanded="false" />
-                <element signature="e#7673#8043#0" expanded="false" />
+                <element signature="e#107#3725#0" expanded="false" />
+                <element signature="e#474#2053#0" expanded="false" />
+                <element signature="e#2090#2359#0" expanded="false" />
+                <element signature="e#3936#4345#0" expanded="false" />
+                <element signature="e#4375#11374#0" expanded="false" />
+                <element signature="e#4583#5042#0" expanded="false" />
+                <element signature="e#4796#4952#0" expanded="false" />
+                <element signature="e#5149#5605#0" expanded="false" />
+                <element signature="e#5707#5929#0" expanded="false" />
+                <element signature="e#6023#6549#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -88,11 +91,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/js/interfaces.js" />
-        <option value="$PROJECT_DIR$/src/js/main.js" />
-        <option value="$PROJECT_DIR$/src/js/oriented.js" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/CONTRIBUTING.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/js/main.js" />
+        <option value="$PROJECT_DIR$/src/js/oriented.js" />
       </list>
     </option>
   </component>
@@ -247,44 +250,48 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/oriented.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="277" max-vertical-offset="930">
-          <caret line="148" column="39" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="39" />
-          <folding>
-            <element signature="e#72#3690#0" expanded="false" />
-            <element signature="e#439#2018#0" expanded="false" />
-            <element signature="e#2055#2324#0" expanded="false" />
-            <element signature="e#3751#4666#0" expanded="false" />
-            <element signature="e#6541#11499#0" expanded="false" />
-            <element signature="e#6825#6981#0" expanded="false" />
-            <element signature="e#7185#7641#0" expanded="false" />
-            <element signature="e#7673#8043#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="645">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="8" selection-end-column="42" />
+        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="645">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4745223" vertical-offset="347" max-vertical-offset="990">
-          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+        <state vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="945">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="307" max-vertical-offset="1350">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/oriented.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.114854515" vertical-offset="0" max-vertical-offset="653">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding>
+            <element signature="e#107#3725#0" expanded="false" />
+            <element signature="e#474#2053#0" expanded="false" />
+            <element signature="e#2090#2359#0" expanded="false" />
+            <element signature="e#3936#4345#0" expanded="false" />
+            <element signature="e#4375#11374#0" expanded="false" />
+            <element signature="e#4583#5042#0" expanded="false" />
+            <element signature="e#4796#4952#0" expanded="false" />
+            <element signature="e#5149#5605#0" expanded="false" />
+            <element signature="e#5707#5929#0" expanded="false" />
+            <element signature="e#6023#6549#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
