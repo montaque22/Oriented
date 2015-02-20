@@ -3,7 +3,7 @@
  */
 
 //TODO: Merge into One scope
-    
+
 var Interface = (function(){
     var InterfaceList={};
 
