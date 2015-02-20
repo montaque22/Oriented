@@ -1,0 +1,25 @@
+{
+  "name": "oriented",
+  "version": "0.0.0",
+  "homepage": "https://github.com/montaque22/Oriented",
+  "authors": [
+    "Michael Montaque <montaque.developer@gmail.com>"
+  ],
+  "description": "Adding a little structure to javascript with some oj",
+  "main": "src/js/oriented.js",
+  "keywords": [
+    "oriented",
+    "programming",
+    "javascript",
+    "java",
+    "oj"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
