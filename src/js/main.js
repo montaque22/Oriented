@@ -47,7 +47,7 @@ var Person = Abstract.create('Person',function(name){
     // just an ordinary method, however...
     // this method is required by the iPerson interface, which is called at the end of this constructor
     this.move = function(){
-        console.log('I can walk, run, swim, crawl, jump, and climb');
+        console.log('I can walk around, just like an engineer');
     };
 
     /*
@@ -63,10 +63,10 @@ var Person = Abstract.create('Person',function(name){
 // Test Class (Soon to be Subclass)
 function Engineer(){
     this.work = function(){
-        console.log('I do math stuff');
+        console.log('Watch me do mathy stuff');
     };
     this.talk = function(){
-        console.log('I am an engineer');
+        console.log('My name is '+this.name+'. I am an engineer');
     };
 }
 
@@ -79,6 +79,13 @@ function Engineer(){
      This method takes in the Abstract Class - Person -
      and an array of arguments to be passed into the Constructor during initialization
  */
-var man = Engineer.extends(Person, ['Krillin']);
+var man = Engineer.extends(Person, ['Nunoff Yoribiznes']);
 
-
+man.talk();
+man.work();
+man.move();
+console.log("This is what I contain inside me");
+console.log(man);
+console.log("I also cleverly hid away something special");
+console.log(man.oriented);
+console.log("it's immutable and un-enumerable so my prototype will not show it");
