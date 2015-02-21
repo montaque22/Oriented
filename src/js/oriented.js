@@ -80,7 +80,7 @@ var Interface = (function(){
                     " interface. Method/Property " + methodName + " was not found.");
                 }
             }
-            addIterface(object, interfaceName)
+            addIterface(object, interfaceName);
             //TODO: allow multiple interfaces to be defined from this method and lock them
         }
     }
@@ -90,7 +90,7 @@ Object.preventExtensions(Interface);
 Function.prototype.extends = function(superClass, args){
 
     return Abstract.extends(this, superClass,args);
-}
+};
 
 
 Function.prototype.defineAbstractMethod = function () {
@@ -124,7 +124,7 @@ var Abstract = (function(){
                 configurable:false,
                 writable:true,
                 value:{isAbstract:true}
-            })
+            });
             protectedFunctions[name] = myClass;
             return name;
         }
@@ -198,7 +198,7 @@ var Abstract = (function(){
             var abstractWrapper = function(){
                 //Prevent people from instantiating thi
                 throw new Error(className + 'is an abstract class. You cannot instantiate an abstract class')
-            }
+            };
 
             // Add an id to the mock class
             abstractWrapper.prototype.id = className;
@@ -261,7 +261,7 @@ var Abstract = (function(){
             var mirror = function(){
                 //TODO: When passing arguments apply to the subclass but if the subclass have not arguments then apply to the superclass
                 subclass.call(this);
-            }
+            };
 
             // Extend
             mirror.prototype = new subclass();
@@ -290,7 +290,7 @@ var Abstract = (function(){
             // Make sure the object conforms to its interface
             if(extendedObject.oriented.interfaces) {
                 for(var i = 0; i<extendedObject.oriented.interfaces.length;i++){
-                    //TODO Change to allow object to check if it conforms to a given interface
+                    //todo Change to allow object to check if it conforms to a given interface
                     Interface.implements(extendedObject, extendedObject.oriented.interfaces[i]);
                 }
             }
@@ -298,5 +298,5 @@ var Abstract = (function(){
             return extendedObject;
         }
     }
-})()
+})();
 Object.preventExtensions(Abstract);

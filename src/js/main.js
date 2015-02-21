@@ -57,7 +57,7 @@ var Person = Abstract.create('Person',function(name){
         subclasses to ensure that they implement iPerson
     */
     Interface.implements(this, 'iPerson');
-})
+});
 
 
 // Test Class (Soon to be Subclass)

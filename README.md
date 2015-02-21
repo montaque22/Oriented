@@ -2,10 +2,10 @@
 
 Oriented JS or Ojs is meant to make javascript a little more structured like traditional Java.
 Ojs gives developers the ability to declare interfaces and abstract classes as well as implement 
- and extend them respectively. Hopefully this will help make more readable and allow developer to 
+ and extend them respectively. Hopefully this will help make code more readable and allow developers to 
  implement design patterns in traditional ways. 
  
- Please understand that Javascript doesnt lend itself to this kind of structure so i am sure there are ways to 
+ Please understand that Javascript doesn't lend itself to this kind of structure so I am sure there are ways to 
  circumvent my methods and structure, but it this plugin is an attempt to introduce something familiar.
  
  So drink up and try Ojs :) 
@@ -14,10 +14,7 @@ Ojs gives developers the ability to declare interfaces and abstract classes as w
 
 ## Quick start
 
-For the time being please download this repo and try out the demo.
-The script that contains the magic is oriented.js.
-
-It isn't tested so don't go putting it in production code just yet.
+bower install --save oriented
 
 
 ## Features
@@ -30,7 +27,7 @@ It isn't tested so don't go putting it in production code just yet.
 
 ## Documentation
 
-Look at the comments in main.js. It should be very self explanatory
+Look at the comments in src/js/main.js. It should be very self explanatory
 
 
 ## Contributing
