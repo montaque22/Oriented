@@ -34,15 +34,11 @@ Oriented('iPerson').defineInterface('talk','walk');
 Oriented('Person',function (name){
 
 
-    // You can implement interfaces in abstract classes. The subclass will be checked against the interfaces instead
-    // of the abstract (super) class. This way you can implement some of the code in the super class and the rest in
-    // the subclass
-
-
     this.name = name;
 
 
-
+// this method is required by iPerson. It is optional to implement it in the super class. As long as either the
+// superclass or the subclass implements it the plugin will not care.
     this.talk = function(){
         console.log('Hi, my name is ' + this.name);
     };
@@ -74,30 +70,15 @@ Oriented('Person',function (name){
  */
 Oriented('Child', function (){
 
-    /*
-     This method extends the current class with Person class.
-     You can pass in the arguments as it will run the init function.
-     If the init function cannot be found it will do nothing
-
-     NOTE: you must return after calling this method. It does not matter where you call this method (beginning
-     or end) as it will make sure all the properties are properly instantiated.
-     */
 
 
-    // Required by iPerson. Without it the class will throw an exception
+    // Required by iPerson. Without it the class will throw an exception. Since we did not implement it in the
+    // superclass we have to implement it here
     this.walk = function(){
         console.log('I can walk anywhere');
     };
 
-    // Required by iPerson. This is overriding the super class's implementation.
 
-
-    // We can make sure that specific private functions are implemented as well. If the private method is
-    // implemented in the super class it will throw an error as it is not accessible to the subclass.
-    // without this method the class will throw an exception
-    function terrible(){
-
-    }
 })
 /*
         ... Then we call extends and pass the name of the abstract class we want to subclass
@@ -110,7 +91,7 @@ Oriented('Child', function (){
          -- The plugin will not allow you to extend non abstract classes.
      */
     .extends('Person');
-// Will be subclassing Person
+
 
 
 /*
@@ -182,8 +163,11 @@ Oriented('Engineer',function Engineer(){
 var man = Oriented('Engineer').instantiateWith('Nunoff Yoribiznes');
 
 man.talk();
-man.work();
 man.walk();
+man.work();
+
+
+
 console.log("This is what I contain inside me");
 console.log(man);
 console.log("I also cleverly hid away something special");

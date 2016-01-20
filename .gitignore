@@ -9,3 +9,7 @@ workspace.xml
 *.xml
 
 .idea/encodings.xml
+
+.idea/workspace.xml
+
+*.xml
