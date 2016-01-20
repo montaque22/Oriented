@@ -6,7 +6,7 @@ Ojs gives developers the ability to declare interfaces and abstract classes as w
  implement design patterns in traditional ways. 
  
  Please understand that Javascript doesn't lend itself to this kind of structure so I am sure there are ways to 
- circumvent my methods and structure, but it this plugin is an attempt to introduce something familiar.
+ circumvent my methods and structure, but it this is an attempt to introduce something familiar.
  
  So drink up and try Ojs :) 
 
@@ -23,15 +23,16 @@ bower install --save oriented
 * Create and extend Abstract Classes
 * Define "Abstract methods"
 
+## Caveats
+* If a class implements an interface, all the needed methods need to be public. 
+This plugin cannot detect whether or not a class implemented a method internally. 
 
 
 ## Documentation
 
-Look at the comments in src/js/main.js. It should be very self explanatory
+Look at the comments in [main.js](src/js/main.js). It should be very self explanatory.
 
 
-## Contributing
-Feel free to fork and run with this simple idea.
 
 
 ## Licence

@@ -1,12 +1,9 @@
 /**
  * Created by montaque22 on 2/18/15.
- * Updated on 1/20/16
- *
- *
- * Version 2.0
  */
 'use strict';
 
+//TODO: Merge into One scope
 var Oriented = new (function(){
 
     var classStrorage = {};
@@ -280,4 +277,8 @@ var Oriented = new (function(){
     return OrientedJS;
 
 })();
+
+
+Object.preventExtensions(Oriented);
+
 

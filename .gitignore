@@ -7,3 +7,5 @@ workspace.xml
 .idea/workspace.xml
 
 *.xml
+
+.idea/encodings.xml
