@@ -121,7 +121,7 @@ var Oriented = new (function(){
             }else if(Class.prototype.oriented.isAbstract){
                 throw new Error("Cannot instantiate "+ name+ " because it is an abstract class")
             }else if(completedClasses[name]){
-                return new completedClasses[name]();
+                return new completedClasses[name](args);
             }
 
             // Find the class it extends
@@ -138,7 +138,7 @@ var Oriented = new (function(){
                 }
 
                 // construct a new final class
-                finalClass = function(){
+                finalClass = function(args){
                     extendedClass.apply(this, args);
                     var hasReturn = Class.apply(this, args);
 
@@ -168,7 +168,7 @@ var Oriented = new (function(){
 
             // Protect against the final class not needing to be extended
             if(!finalClass.prototype.oriented){
-                finalClass = function(){
+                finalClass = function(args){
                     var hasReturn = Class.apply(this, args);
 
                     if(hasReturn){
@@ -197,7 +197,7 @@ var Oriented = new (function(){
 
             if(doesImplements.length){
                 // get all the properties for the final class
-                finalClassProperties = Object.keys(new finalClass());
+                finalClassProperties = Object.keys(new finalClass(args));
 
                 // cycle through all the interface names
                 doesImplements.forEach(function(iFace){
@@ -224,7 +224,7 @@ var Oriented = new (function(){
 
             completedClasses[name] = finalClass;
 
-            return new finalClass();
+            return new finalClass(args);
         }
 
         function defineInterface(){
@@ -281,3 +281,5 @@ var Oriented = new (function(){
 
 })();
 
+if(typeof module !== 'undefined' && this.module !== module && module.exports)
+    module.exports = Oriented;

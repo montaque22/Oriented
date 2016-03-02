@@ -129,8 +129,8 @@ Oriented('Child', function (){
 var child = Oriented('Child').instantiateWith('billy');
 
 
-child.talk();
-child.walk();
+child.talk(); // Hi, my name is billy
+child.walk(); // I can walk anywhere
 
 
 
@@ -162,16 +162,23 @@ Oriented('Engineer',function Engineer(){
 
 var man = Oriented('Engineer').instantiateWith('Nunoff Yoribiznes');
 
-man.talk();
-man.walk();
-man.work();
+man.talk(); // My name is Nunoff Yoribiznes. I am an engineer
+man.walk(); // I move on my seqway
+man.work(); // Watch me do mathy stuff. I make things better...sometimes
 
 
 
 console.log("This is what I contain inside me");
+/*
+ {
+ "name":"Nunoff Yoribiznes"
+    // and other properties
+ }
+ */
 console.log(man);
 console.log("I also cleverly hid away something special");
 // This would give insight into the class the object came from
+// {"extends":"Person","implements":["iPerson"],"isAbstract":false}
 console.log(man.oriented);
 console.log("it's immutable and un-enumerable so my prototype will not show it");
 
